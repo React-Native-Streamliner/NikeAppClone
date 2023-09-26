@@ -19,7 +19,7 @@ const ShoppingCartTotals = () => {
     </View>
 }
 
-const ShoppingCart = () => {
+const ShoppingCartScreen = () => {
     return (
         <>
             <FlatList 
@@ -27,14 +27,14 @@ const ShoppingCart = () => {
             renderItem={({item}) => <CartListItem cartItem={item}></CartListItem>}
             ListFooterComponent={ShoppingCartTotals}
             />
-            <Pressable onPress={} style={styles.button} >
+            <Pressable style={styles.button} >
                 <Text style={styles.buttonText}>Checkout</Text>
             </Pressable>
         </>
     )
 }
 
-export default ShoppingCart
+export default ShoppingCartScreen
 
 const styles = StyleSheet.create({
     totalContainer: {

@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
+import ShoppingCartScreen from './src/screens/ShoppingCartScreen';
 import Navigation from './src/navigation';
 
 

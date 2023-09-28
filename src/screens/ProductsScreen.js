@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
+import { StyleSheet, View, Image, FlatList } from 'react-native';
 import products from '../data/products.json';
 
 const ProductsScreen = () => {

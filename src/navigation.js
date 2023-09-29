@@ -10,10 +10,16 @@ const Navigation = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-
-                <Stack.Screen name="ProductDetailsScreen" component={ProductDetailsScreen} />
-                <Stack.Screen name="ProductsScreen" component={ProductsScreen} />
-                <Stack.Screen name="ShoppingCartScreen" component={ShoppingCartScreen} />
+                <Stack.Screen name="Products" component={ProductsScreen} />
+                <Stack.Screen 
+                    name="Product Details" 
+                    component={ProductDetailsScreen}
+                    options={{ presentation: 'modal' }}
+                />
+                <Stack.Screen 
+                    name="Cart" 
+                    component={ShoppingCartScreen}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     )
